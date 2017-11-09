@@ -2,18 +2,18 @@
  * Created by lenovo on 2017/11/9.
  */
 let id = 0;
-export const AddTodo = (text) => ({
-  text,
+export const addTodo = (text) => ({
+  type: 'ADD_TODO',
   id: id++,
-  type: 'ADD_TODO'
-});
+  text
+})
 
-export const ToggleTodo = (id) => ({
+export const toggleTodo = (id) => ({
   id,
   type: 'TOGGLE_TODO'
 });
 
-export const VisibleTodos = (filter) => ({
+export const visibleTodos = (filter) => ({
   filter,
   type: 'VISIBLE_TODOS'
 });

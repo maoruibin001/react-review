@@ -15,7 +15,7 @@ const todos = (state = [], action) => {
     case 'TOGGLE_TODO':
       return state.map(todo =>
         (todo.id === action.id)
-          ? Object.assign(todo, {completed: !todo.completed})
+          ? Object.assign(todo, {complete: !todo.complete})
           : todo
       );
     default:

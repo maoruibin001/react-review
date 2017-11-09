@@ -1,19 +1,15 @@
 /**
  * Created by lenovo on 2017/11/9.
  */
-import React, {Component} from 'react';
-class App extends Component{
-  constructor (props, context) {
-    super(props, context);
-    this.state = { name: 'mao rui bin' };
-  }
+import React, {Component, PropTypes} from 'react';
+import AddTodo from '../containers/AddTodo';
+import TodoList from '../containers/TodoList';
 
-  render() {
-    return <div>
-      <h1>{this.state.name}</h1>
-      <h2>i love you</h2>
-    </div>
-  }
+const App = () => {
+  return <div>
+    <AddTodo/>
+    <TodoList/>
+  </div>
 }
 
 export default App;
